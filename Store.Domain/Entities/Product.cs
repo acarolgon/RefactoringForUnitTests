@@ -1,6 +1,6 @@
 ﻿namespace Store.Domain.Entities
 {
-    class Product : Entity
+    public class Product : Entity
     {
         public Product(string title, decimal price, bool active)
         {

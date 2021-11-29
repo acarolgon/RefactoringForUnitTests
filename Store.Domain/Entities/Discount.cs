@@ -1,6 +1,6 @@
 ﻿namespace Store.Domain.Entities
 {
-    class Discount : Entity
+    public class Discount : Entity
     {
 
         public Discount(decimal amount, DateTime expireDate)

@@ -1,11 +1,17 @@
-﻿namespace Store.Tests.Entities
+﻿
+namespace Store.Tests.Entities
 {
     [TestClass]
     public class OrderTests
     {
+        Order order = new Order(new Customer("Ana Carolina", "anacarolina@mail.com"), 10, new Discount(10, DateTime.Now));
+
+
         [TestMethod]
         [TestCategory("Domain")]
-        public void OrderGenerateGuid8Caracters() { Assert.Fail(); }
+        public void OrderIsValid_GenerateGuid8Caracters() {
+            Assert.AreEqual(8, order.Number.Length);
+        }
 
         [TestMethod]
         [TestCategory("Domain")]

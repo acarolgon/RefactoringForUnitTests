@@ -1,6 +1,6 @@
 ﻿namespace Store.Domain.Entities
 {
-    class OrderItem : Entity
+    public class OrderItem : Entity
     {
 
         public OrderItem(Product product, int quantity)

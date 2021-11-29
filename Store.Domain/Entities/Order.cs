@@ -1,8 +1,6 @@
-﻿using Flunt.Validations;
-
-namespace Store.Domain.Entities
+﻿namespace Store.Domain.Entities
 {
-    class Order : Entity
+    public class Order : Entity
     {
         public Order(Customer customer, decimal deliveryFee, Discount discount)
         {
