@@ -1,6 +1,6 @@
 ﻿namespace Store.Domain.Entities
 {
-    class Entity
+    class Entity : Notifiable<Notification>
     {
         public Entity()
         {
