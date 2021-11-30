@@ -13,7 +13,7 @@
             Customer = customer;
             Date = DateTime.Now;
             Number = Guid.NewGuid().ToString().Substring(0, 8);
-            Status = EOrderStatus.WatingDelivery;
+            Status = EOrderStatus.WatingPayment;
             DeliveryFee = deliveryFee;
             Discount = discount;
             Items = new List<OrderItem>();
@@ -56,7 +56,7 @@
 
         public void Cancel()
         {
-            Status = EOrderStatus.Canceled;
+            this.Status = EOrderStatus.Canceled;
         }
     }
 
